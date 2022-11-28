@@ -1,0 +1,23 @@
+{
+  "name": "landingpage-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquinesteban/LandingPage-Tailwind.git"
+  },
+  "author": "Joaquin esteban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquinesteban/LandingPage-Tailwind/issues"
+  },
+  "homepage": "https://github.com/joaquinesteban/LandingPage-Tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

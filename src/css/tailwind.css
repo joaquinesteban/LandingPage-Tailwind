@@ -1,0 +1,7 @@
+
+@tailwind base; 
+    /*  Inicia todo los elementos HTML sin estilo (div, span, ul, p, h1, etc). */
+@tailwind components;
+    /* Nos permite acceder a todas las clases de tailwind.*/
+@tailwind utilities;
+    /*Agrega todas las utilizades al proyecto y nos permite acceder a ellas*/

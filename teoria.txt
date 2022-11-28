@@ -1,0 +1,65 @@
+
+CLASE 2
+Mobile First y Utility First
+Apuntes
+Mobile First
+
+Está pensado principalmente para mejorar la experiencia de usuario
+Este principio nos permite identificar las partes más importantes de nuestro proyecto
+Se enfoca en dar prioridad principalmente a los estilos en forma de móvil, este principio es popular, ya que estadísticas mencionan que el 80% del tráfico de la web proviene de los dispositivos móviles.
+Utility First
+
+Los frameworks basados en utilidades nos permiten tener una estructura más limpia de nuestros estilos.
+Además, el desarrollo es más rápido porque todo se trabaja dentro del mismo archivo.
+
+INSTALACION DE Tailwind 
+
+Iniciar proyecto usando Tailwind CSS v3.0 (Enero/2022)
+Iniciar proyecto npm: npm init
+
+Instalar Tailwind como un plugin de PostCSS: npm install -D tailwindcss postcss autoprefixer
+
+Documentación de instalación: https://tailwindcss.com/docs/installation/using-postcss
+
+Se ejecuta el siguiente comando npx tailwindcss init para crear el archivo de plantillas tailwind.config.js colocando la siguiente configuración:
+module.exports = {
+  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+Incluir Tailwind en el CSS agregando las directivas a src/css/tailwind.css:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Para correr los estilos de Tailwind se necesita ejecutar el siguiente comando: npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch donde estamos indicando que nuestro archivo tailwind.css que proviene de src haga un build en la carpeta de public al archivo tailwind.css.
+Con esto ya se puede trabajar con Tailwind en nuestro index.html:
+
+    <!-- Un breakpoint es el salto en el que cambia la pantalla de layout. Se pueden manipular los estilos de nuestro archivo en función al tipo de dispositivo.
+
+Debido a que Tailwind es mobile first, todo el tiempo se estará trabajando con el breakpoint small.
+
+Breakpoints más comunes:
+
+320px → Small → Dispositivo mobile.
+768px → Medium → Tablet.
+1280px → Large → Computadora.
+En el sizing, para trabajar las medidas de width y height se usa la clase w-{number} y h-{number} respectivamente, cabe mencionar que cada unidad es igual a 0.25rem. Por ejemplo, w-4 es lo mismo que width: 1rem;
+
+Las medidas porcentuales se manejan como una fracción, w-{fraction}. Por ejemplo: w-1/2 es lo mismo que width: 50%;. También existe w-auto (width: auto)
+
+Otras propiedades para width: min-w-{number}, max-w-{number}, min-w-full.
+
+Otras propiedades para height: min-w-{number}, max-w-{number}, min-w-full.
+
+Más propiedades en la documentación https://tailwindcss.com/docs/min-width
+
+Ejemplo practico: -->
+
+<div class="w-auto h-screen bg-sky-200 flex">
+  <div class="w-1/2 h-1/4 bg-sky-700"></div>
+  <div class="w-1/4 h-1/2 bg-cyan-400"></div>
+  <div class="w-1/4 h-32 bg-cyan-700"></div>S
+  <div class="w-1/3 h-72 bg-cyan-900"></div>
+</div>
