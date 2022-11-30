@@ -4,21 +4,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bali':" URL('./public/img/bali.jpg')",
-        'chicago':" URL('./public/img/chicago.jpg')",
-        'europe':" URL('./public/img/europe.jpg')",
-        'iceland':" URL('./public/img/iceland.jpg')",
-
-        'LA':" URL('./public/img/LA.jpg')",
-        'miami':" URL('./public/img/miami.jpg')",
-        'new_york':" URL('./public/img/new_york.jpg')",
-        'norway':" URL('./public/img/norway.jpg')",
-        'sanFrancisco':" URL('./public/img/sanFrancisco.jpg')",
-        'sanFranciscoDesktop':" URL('./public/img/sanFranciscoDesktop.jpg')",
-        'seattle':" URL('./public/img/seattle.jpg')",
-        'switzerland':" URL('./public/img/switzerland.jpg')",
-        'sydney':" URL('./public/img/sydney.jpg')",
-        'yosemite':" URL('./public/img/yosemite.jpg')",
+        'bali':" url('../img/bali.jpg')",
+        'chicago':" url('../img/chicago.jpg')",
+        'europe':" url('../img/europe.jpg')",
+        'iceland':" url('../img/iceland.jpg')",
+        'LA':" url('../img/LA.jpg')",
+        'miami':" url('../img/miami.jpg')",
+        'new_york':" url('../img/new_york.jpg')",
+        'norway':" url('../img/norway.jpg' )",
+        'sanFrancisco':" url('../img/sanFrancisco.jpg')",
+        'sanFranciscoDesktop':" url('../img/sanFranciscoDesktop.jpg')",
+        'seattle':" url('../img/seattle.jpg')",
+        'switzerland':" url('../img/switzerland.jpg')",
+        'sydney':" url('../img/sydney.jpg')",
+        'yosemite':" url('../img/yosemite.jpg')",
         
 
       },
@@ -38,5 +37,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 };

@@ -10,25 +10,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>LandingPage</title>
 </head >
-<body >
+<body  class="font:Roboto">
     <div id="tab_bar"></div>
-    <section class="w-full h-screen">
+    <section class="w-full h-full mb-8">
         <div id="home">
             <div class="w-full h-3/4 ">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center ">
-                    <input class="outline-none p-4 rounded-full shadow-lg" type="search" placeholder="San Francisco" name="" id="">
-                    <button class=" w-46 bg-white text-xl text-primary font-semibold p-4 rounded-full shadow-lg">Explore More</button>
+                    <input class="outline-none p-4 rounded-full shadow-lg transition duration-700 ease-in-out focus:whithin:shadow-sm focus:ring-2 focus:w-11/12 hover:scale-90" type="search" placeholder="San Francisco" name="" id="">
+                    <button class=" w-46 bg-white text-xl text-primary font-semibold p-4 rounded-full shadow-lg transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 ">Explore More</button>
                 </div>
                 <div class="w-full h-full">
                     <img src="./img/sanFrancisco.jpg" alt="imagen de sanFrancisco">
                 </div>
               
-                
+                    
             </div>
         </div>
-        <div id="recomendadas"></div>
-        <div id="restas_destacadas"></div>
+        <div class="p-6" id="recomendadas">
+            <p class="text-3xl font-semibold text-primary">Our Recomemendations</p>
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-2 scrollbar-hide">
+                <div class="card">
+                    <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg">
+                         
+                    </div>
+                    <div class="w-full  h-2/5 bg-secundary  rounded-b-lg">
+                        <p class="text-white font-bold pt-3 px-4">Norway</p>
+                        <p class="text-white text-base px-4">Beautiful landscapes</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="w-full h-3/5 bg-new_york bg-cover rounded-t-lg">
+                         
+                    </div>
+                    <div class="w-full  h-2/5 bg-terciary  rounded-b-lg">
+                        <p class="text-white font-bold pt-3 px-4">New York</p>
+                        <p class="text-white text-base px-4">Concrete jungle</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="w-full h-3/5 bg-yosemite bg-cover rounded-t-lg">
+                         
+                    </div>
+                    <div class="w-full  h-2/5 bg-primary rounded-b-lg">
+                        <p class="text-white font-bold pt-3 px-4">Yosemite</p>
+                        <p class="text-white text-base px-4">A break from the world</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            
+        <div class="px-6 h-auto w-full mb-10 " id="restas_destacadas">
+            <p class="text-3xl text-primary font-semibold pb-6">Trending Stays</p>
+            <div class=" w-full h-full flex flex-col space-y-6 items-center justify-center">
+                <div class="w-full h-96 mb-4 bg-chicago bg-cover rounded-lg">
+                    <p class="cardTitle">Chicago</p>
+                    <p class="text-md pl-8 text-black mr-24">2 rooms, bathroom and kitchen.</p>
+                </div>
+
+                <div class="w-full h-96 mb-4 bg-LA bg-cover rounded-lg">
+                    <p class="cardTitle">Los Angeles</p>
+                    <p class="text-md pl-8 text-black mr-24">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
+                </div>
+
+                <div class="w-full h-96 mb-4 bg-miami bg-cover rounded-lg">
+                    <p class="cardTitle">Miami</p>
+                    <p class="text-md pl-8 text-black mr-24">3 rooms, 2 bathrooms,  kitchen and amazing sea view.</p>
+                </div>
+            </div>
+        </div>
+
+        <div  class="w-full h-auto mt-4" id="faqs">
+            <div class="w-full h-full px-6 flex flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold">FAQs</p>
+                <div class=""> 
+                    <p class="text-xl font-medium text-primary">Payment Methods</p>
+                    <p class="text-medium pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                </div>
+
+                <div class=""> 
+                    <p class="text-xl font-medium text-primary">Cancellation Policy</p>
+                    <p class="text-medium pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                </div>
+
+                <div class=""> 
+                    <p class="text-xl font-medium text-primary">Long Stays </p>
+                    <p class="text-medium pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                </div>
+
+                <div class=""> 
+                    <p class="text-xl font-medium text-primary">Cancellation Policy</p>
+                    <p class="text-medium pt-2">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+                </div>
+            </div>
+        </div>
+
+        
     </section>
+    <footer class="w-full h-full bg-gray-50">
+        <p class="taxt-lg"> About Us</p>
+        <p class="taxt-lg">Jobs</p>
+        <p class="taxt-lg">Privacy policy</p>
+        <p class="taxt-lg">Terms and Conditions</p>
+        <p class="taxt-lg">Platzi Travel, inc</p>
+        <p class="taxt-lg">Follow Us </p>
+        
+
+    </footer>
+   
     
 </body>
 </html>
